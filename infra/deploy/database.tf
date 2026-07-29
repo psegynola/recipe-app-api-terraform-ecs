@@ -27,7 +27,7 @@ resource "aws_security_group" "rds" {
       aws_security_group.ecs_service.id
     ]
   }
-  
+
   tags = {
     Name = "${local.prefix}-db-security-group"
   }
